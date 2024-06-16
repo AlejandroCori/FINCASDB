@@ -47,11 +47,11 @@ include("conexion.php");
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="Tablas.php">T_Administrador</a>
+                                <a class="nav-link" href="T_Administrador.php">T_Administrador</a>
                                 <a class="nav-link" href="T_ComunidadVecinos.php">T_ComunidadVecinos</a>
                             </nav>
                         </div>
-                        <a class="nav-link" href="Tablas.html">
+                        <a class="nav-link" href="Tablas.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Tablas
                         </a>
