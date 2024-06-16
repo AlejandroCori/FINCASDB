@@ -67,39 +67,43 @@ include("conexion.php");
                         <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
                         <li class="breadcrumb-item active">TABLAS</li>
                     </ol>
+
                     <div class="card mb-4">
                     </div>
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            T_ComunidadVecinos
+                            T_Compañia
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th scope="col">N Colegiado</th>
-                                        <th scope="col">Poblacion</th>
+                                        <th scope="col">CIF</th>
+                                        <th scope="col">Persona Contacto</th>
+                                        <th scope="col">Telefono Contacto </th>
+                                        <th scope="col">Sector</th>
+                                        <th scope="col">Sector</th>
+                                        <th scope="col">Direccion</th>
                                         <th scope="col">Nombre</th>
-                                        <th scope="col">Calle</th>
-                                        <th scope="col">CodigoPostal</th>
-                                        <th scope="col">nColegiado</th>
+                                        <th scope="col">Telefono</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM ComunidadVecinos;");
+                                    $sql = $Conexion->query("SELECT * FROM Compania;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
-                                            <td><?php echo $dato['poblacion'] ?> </td>
+                                            <td><?php echo $dato['CIF'] ?> </td>
+                                            <td><?php echo $dato['personaContacto'] ?> </td>
+                                            <td><?php echo $dato['telefonoContacto'] ?> </td>
+                                            <td><?php echo $dato['sector'] ?> </td>
+                                            <td><?php echo $dato['direccion'] ?> </td>
                                             <td><?php echo $dato['nombre'] ?> </td>
-                                            <td><?php echo $dato['calle'] ?> </td>
-                                            <td><?php echo $dato['codigoPostal'] ?> </td>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
+                                            <td><?php echo $dato['telefono'] ?> </td>
 
                                         </tr>
                                     <?php

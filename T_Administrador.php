@@ -49,12 +49,11 @@ include("conexion.php");
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="T_Administrador.php">T_Administrador</a>
                                 <a class="nav-link" href="T_ComunidadVecinos.php">T_ComunidadVecinos</a>
+                                <a class="nav-link" href="T_Compania.php">T_Compañia</a>
+                                <a class="nav-link" href="T_Contrata.php">T_Contrata</a>
+                                <a class="nav-link" href="T_Recibo.php">T_Recibo</a>
                             </nav>
                         </div>
-                        <a class="nav-link" href="TT_Administrador.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Tables
-                        </a>
                     </div>
                 </div>
 
@@ -95,132 +94,6 @@ include("conexion.php");
                                             <td><?php echo $dato['nColegiado'] ?> </td>
                                             <td><?php echo $dato['DNI'] ?> </td>
                                             <td><?php echo $dato['Nombre'] ?> </td>
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            T_ComunidadVecinos
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-bordered" id="datatablesSimple1">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">N Colegiado</th>
-                                        <th scope="col">Poblacion</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Calle</th>
-                                        <th scope="col">CodigoPostal</th>
-                                        <th scope="col">nColegiado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $sql = $Conexion->query("SELECT * FROM ComunidadVecinos;");
-                                    $Fila = $sql->fetch_all(MYSQLI_ASSOC);
-
-                                    foreach ($Fila as $dato) {
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
-                                            <td><?php echo $dato['poblacion'] ?> </td>
-                                            <td><?php echo $dato['nombre'] ?> </td>
-                                            <td><?php echo $dato['calle'] ?> </td>
-                                            <td><?php echo $dato['codigoPostal'] ?> </td>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
-
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            T_Compañia
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-bordered" id="datatablesSimple">
-                                <thead>
-                                <tr>
-                        <th scope="col">CIF</th>
-                        <th scope="col">Persona Contacto</th>
-                        <th scope="col">Telefono Contacto </th>
-                        <th scope="col">Sector</th>
-                        <th scope="col">Sector</th>
-                        <th scope="col">Direccion</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Telefono</th>
-                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $sql = $Conexion->query("SELECT * FROM Compania;");
-                                    $Fila = $sql->fetch_all(MYSQLI_ASSOC);
-
-                                    foreach ($Fila as $dato) {
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $dato['CIF'] ?> </td>
-                                            <td><?php echo $dato['personaContacto'] ?> </td>
-                                            <td><?php echo $dato['telefonoContacto'] ?> </td>
-                                            <td><?php echo $dato['sector'] ?> </td>
-                                            <td><?php echo $dato['direccion'] ?> </td>
-                                            <td><?php echo $dato['nombre'] ?> </td>
-                                            <td><?php echo $dato['telefono'] ?> </td>
-
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="card mb-4">
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            T_Contrata
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-bordered" id="datatablesSimple">
-                                <thead>
-                                <tr>
-                        <th scope="col">N.Contrato </th>
-                        <th scope="col">CIF</th>
-                        <th scope="col">ColegioID </th>
-                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $sql = $Conexion->query("SELECT * FROM Contrata;");
-                                    $Fila = $sql->fetch_all(MYSQLI_ASSOC);
-
-                                    foreach ($Fila as $dato) {
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $dato['nContrato'] ?> </td>
-                                            <td><?php echo $dato['CIF'] ?> </td>
-                                            <td><?php echo $dato['colegioID'] ?> </td>
-
                                         </tr>
                                     <?php
                                     }

@@ -72,35 +72,32 @@ include("conexion.php");
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            T_ComunidadVecinos
+                            T_Recibo
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th scope="col">N Colegiado</th>
-                                        <th scope="col">Poblacion</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Calle</th>
-                                        <th scope="col">CodigoPostal</th>
-                                        <th scope="col">nColegiado</th>
+                                        <th scope="col">nRecibo</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Importe</th>
+                                        <th scope="col">Numero</th>
+                                        <th scope="col">CIF</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM ComunidadVecinos;");
+                                    $sql = $Conexion->query("SELECT * FROM Recibo;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
-                                            <td><?php echo $dato['poblacion'] ?> </td>
-                                            <td><?php echo $dato['nombre'] ?> </td>
-                                            <td><?php echo $dato['calle'] ?> </td>
-                                            <td><?php echo $dato['codigoPostal'] ?> </td>
-                                            <td><?php echo $dato['nColegiado'] ?> </td>
-
+                                            <td><?php echo $dato['nRecibo'] ?> </td>
+                                            <td><?php echo $dato['fecha'] ?> </td>
+                                            <td><?php echo $dato['importe'] ?> </td>
+                                            <td><?php echo $dato['numero'] ?> </td>
+                                            <td><?php echo $dato['CIF'] ?> </td>
                                         </tr>
                                     <?php
                                     }
@@ -109,19 +106,35 @@ include("conexion.php");
                             </table>
                         </div>
                     </div>
-
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-                <script src="js/scripts.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-                <script src="js/datatables-simple-demo.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
-                <script>
-                    $document.ready(function() {
-                        $('#datatablesSimple').DataTable();
-                    });
-                </script>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
+    <script>
+        $document.ready(function() {
+            $('#datatablesSimple').DataTable();
+            $('#datatablesSimple1').DataTable();
+
+        });
+    </script>
 </body>
 
 
