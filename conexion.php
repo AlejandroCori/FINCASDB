@@ -15,4 +15,6 @@
    if (!$Conexion) {
        echo "Fallo al conectar a MySQL";
    }
+   
+   return $Conexion;
 ?>

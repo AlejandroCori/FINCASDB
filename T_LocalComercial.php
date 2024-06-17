@@ -92,7 +92,7 @@ include("conexion.php");
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Oficina;");
+                                    $sql = $Conexion->query("SELECT * FROM LocalComercial;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
