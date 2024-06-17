@@ -96,7 +96,7 @@ include("conexion.php");
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Banco;");
+                                    $sql = $Conexion->query("SELECT * FROM Cuenta;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {

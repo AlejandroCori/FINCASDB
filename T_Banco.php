@@ -100,7 +100,7 @@ include("conexion.php");
                                         <tr>
                                             <td><?php echo $dato['codBanco'] ?> </td>
                                             <td><?php echo $dato['contacto'] ?> </td>
-                                            <td><?php echo $dato['Nombre'] ?> </td>
+                                            <td><?php echo $dato['nombre'] ?> </td>
                                         </tr>
                                     <?php
                                     }

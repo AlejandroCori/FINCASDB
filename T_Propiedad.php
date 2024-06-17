@@ -100,7 +100,7 @@ include("conexion.php");
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Propetiario;");
+                                    $sql = $Conexion->query("SELECT * FROM Propiedad;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
