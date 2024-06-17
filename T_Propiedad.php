@@ -79,32 +79,44 @@ include("conexion.php");
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            T_Recibo
+                            T_Propiedad
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th scope="col">nRecibo</th>
-                                        <th scope="col">Fecha</th>
-                                        <th scope="col">Importe</th>
-                                        <th scope="col">Numero</th>
-                                        <th scope="col">CIF</th>
+                                        <th scope="col">N.Cuenta</th>
+                                        <th scope="col">Portal</th>
+                                        <th scope="col">Porcentaje</th>
+                                        <th scope="col">Letra</th>
+                                        <th scope="col">Planta</th>
+                                        <th scope="col">Telefono</th>
+                                        <th scope="col">Contacto</th>
+                                        <th scope="col">N.Inquilino</th>
+                                        <th scope="col">N.Propietario</th>
+                                        <th scape="col">Direccion Propietario</th>
+                                        <th scape="col">ColegioID </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Recibo;");
+                                    $sql = $Conexion->query("SELECT * FROM Propetiario;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $dato['nRecibo'] ?> </td>
-                                            <td><?php echo $dato['fecha'] ?> </td>
-                                            <td><?php echo $dato['importe'] ?> </td>
-                                            <td><?php echo $dato['numero'] ?> </td>
-                                            <td><?php echo $dato['CIF'] ?> </td>
+                                            <td><?php echo $dato['nCuenta'] ?> </td>
+                                            <td><?php echo $dato['portal'] ?> </td>
+                                            <td><?php echo $dato['porcentaje'] ?> </td>
+                                            <td><?php echo $dato['letra'] ?> </td>
+                                            <td><?php echo $dato['planta'] ?> </td>
+                                            <td><?php echo $dato['telefono'] ?> </td>
+                                            <td><?php echo $dato['contacto'] ?> </td>
+                                            <td><?php echo $dato['nInquilino'] ?> </td>
+                                            <td><?php echo $dato['nPropietario'] ?> </td>
+                                            <td><?php echo $dato['direccionPropietario'] ?> </td>
+                                            <td><?php echo $dato['colegioID'] ?> </td>
                                         </tr>
                                     <?php
                                     }

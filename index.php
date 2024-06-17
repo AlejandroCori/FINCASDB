@@ -46,6 +46,13 @@
                                 <a class="nav-link" href="T_Compania.php">T_Compañia</a>
                                 <a class="nav-link" href="T_Contrata.php">T_Contrata</a>
                                 <a class="nav-link" href="T_Recibo.php">T_Recibo</a>
+                                <a class="nav-link" href="T_Banco.php">T_Banco</a>
+                                <a class="nav-link" href="T_Cuenta.php">T_Cuenta</a>
+                                <a class="nav-link" href="T_Propiedad.php">T_Propiedad</a>
+                                <a class="nav-link" href="T_ReciboCuotaComunidad.php">T_Recibo de Cuota Comunidad</a>
+                                <a class="nav-link" href="T_ViviendaParticular.php">T_ViviendaParticular</a>
+                                <a class="nav-link" href="T_Oficina.php">T_Oficinal</a>
+                                <a class="nav-link" href="T_LocalComercial.php">T_LocalComercial</a>
                             </nav>
                         </div>
                     </div>
