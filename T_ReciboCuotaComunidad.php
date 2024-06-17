@@ -79,33 +79,30 @@ include("conexion.php");
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            T_Recibo
+                            T_Recibo de Cuota Comunidad
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th scope="col">nRecibo</th>
-                                        <th scope="col">Fecha</th>
-                                        <th scope="col">Importe</th>
-                                        <th scope="col">Numero</th>
-                                        <th scope="col">CIF</th>
+                                        <th scope="col">N.ReciboCuota </th>
+                                        <th scope="col">Importe </th>
+                                        <th scope="col">Fecha </th>
+                                        <th scope="col">Estado </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Recibo;");
+                                    $sql = $Conexion->query("SELECT * FROM ReciboCuotaComunidad;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $dato['nRecibo'] ?> </td>
-                                            <td><?php echo $dato['fecha'] ?> </td>
+                                            <td><?php echo $dato['nReciboCuota'] ?> </td>
                                             <td><?php echo $dato['importe'] ?> </td>
-                                            <td><?php echo $dato['numero'] ?> </td>
-                                            <td><?php echo $dato['CIF'] ?> </td>
-                                        </tr>
+                                            <td><?php echo $dato['fecha'] ?> </td>
+                                            <td><?php echo $dato['estado'] ?> </td>
                                     <?php
                                     }
                                     ?>
