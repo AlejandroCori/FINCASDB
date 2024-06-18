@@ -3,7 +3,7 @@
 </head>
 <body>
 	<center>
-		<form method="POST" action="T_A_Adb.php"  name="adi">
+		<form method="POST" action="T_A_Abd.php"  name="adi">
 			
 		<table border="1">
 			<tr>
@@ -13,7 +13,7 @@
 			</tr>
             <tr> 
 				<td>
-                    nColegiado 
+                    nContrato 
 				</td>		
 				<td>
 					<input type="text" name="txtnCo">
@@ -21,17 +21,17 @@
 			</tr>
 			<tr>
 				<td>
-                    DNI 
+                    CIF 
 				</td>		
 				<td>
-					<input type="text" name="txtdni">
+					<input type="text" name="txtcif">
 				</td>
 			</tr>
 			<tr>
 				<td>
-                    Nombre 
+                    ColegioID 
 				</td>		
-				<td><input type="text" name="txtnom"></td>
+				<td><input type="text" name="txtcol"></td>
 			</tr>
 			<tr>
 				<td colspan="2">
