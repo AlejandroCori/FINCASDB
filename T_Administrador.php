@@ -35,7 +35,7 @@ include("conexion.php");
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Datos</div>
-                        <a class="nav-link" href="../index.php">
+                        <a class="nav-link" href="index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Inicio
                         </a>
@@ -71,7 +71,7 @@ include("conexion.php");
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">TABLAS</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
                         <li class="breadcrumb-item active">TABLAS</li>
                     </ol>
                     <div class="card mb-4">

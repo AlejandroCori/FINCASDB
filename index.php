@@ -67,44 +67,7 @@
                         <li class="breadcrumb-item active">BASE DE DATOS</li>
                     </ol>
                 </div>
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-table me-1"></i>
 
-                    </div>
-                    <div class="card-body">
-                        <table id="datatablesSimple">
-                            <thead>
-                                <tr>
-                                    <th>Numero</th>
-                                    <th>nColegiado</th>
-                                    <th>Office</th>
-                                    <th>DNI</th>
-                                    <th>Nombre</th>
-                                </tr>
-                            </thead>
-
-                            <tfoot>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>DNI</th>
-                                    <th>Nombre</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <th>DNI</th>
-                                    <th>Nombre</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
             </main>
         </div>
     </div>
