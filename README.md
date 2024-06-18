@@ -1,3 +1,4 @@
+![logo-mirador-de-los-flores](public/log.png)
 # SISTEMA WEB ADMINISTRADOR DE FINCAS
 ***Sistema especializado en administrar fincas***
 
