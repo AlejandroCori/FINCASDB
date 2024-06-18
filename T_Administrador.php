@@ -35,7 +35,7 @@ include("conexion.php");
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Datos</div>
-                        <a class="nav-link" href="../index.php">
+                        <a class="nav-link" href="index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Inicio
                         </a>
@@ -71,7 +71,7 @@ include("conexion.php");
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">TABLAS</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
                         <li class="breadcrumb-item active">TABLAS</li>
                     </ol>
                     <div class="card mb-4">
@@ -86,7 +86,6 @@ include("conexion.php");
                                         <th scope="col">nColegiado</th>
                                         <th scope="col">DNI</th>
                                         <th scope="col">Nombre</th>
-                                        <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -100,10 +99,6 @@ include("conexion.php");
                                             <td><?php echo $dato['nColegiado'] ?> </td>
                                             <td><?php echo $dato['DNI'] ?> </td>
                                             <td><?php echo $dato['Nombre'] ?> </td>
-                                            <th> 
-                                                <a href="CRUD/T_A_M.php" class ="btn btn-warning">Editar></a>
-                                                <a href="CRUD/T_A_E.php" class ="btn btn-danger">Eliminar></a>
-                                            </th>
                                             </tr>
                                     <?php
                                     }
@@ -111,8 +106,10 @@ include("conexion.php");
                                 </tbody>
                             </table>
                                 <div class="container">
-                                    <a href="" class ="btn btn-success">Agregar Productor</a>
-                                </div>
+                                    <a href="CRUD/T_A_A.php" class ="btn btn-success">Agregar</a>
+                                    <a href="CRUD/T_A_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_A_E.php" class ="btn btn-danger">Eliminar</a>
+                            </div>
                         </div>
                     </div>
                 </div>

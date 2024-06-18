@@ -112,6 +112,11 @@ include("conexion.php");
                                     ?>
                                 </tbody>
                             </table>
+                            <div class="container">
+                                    <a href="CRUD/T_R_A.php" class ="btn btn-success">Agregar</a>
+                                    <a href="CRUD/T_R_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_R_E.php" class ="btn btn-danger">Eliminar</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -11,14 +11,13 @@
    $baseDeDatos ="fincas";
 
    $Conexion = new  mysqli($host, $usuario, $contrasena, $baseDeDatos, $puerto);
-   
-<<<<<<< HEAD
+
    if (!$Conexion) {
        echo "Fallo al conectar a MySQL";
    }
    
    return $Conexion;
-=======
+
    function Conectarse()
    {
      global $host, $puerto, $usuario, $contrasena, $baseDeDatos, $tabla;
@@ -46,5 +45,5 @@
  
     $link = Conectarse();
  
->>>>>>> bf18b1fefe29db137d7397c1efb52d6e9b924238
+
 ?>
