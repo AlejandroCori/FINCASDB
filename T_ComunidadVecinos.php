@@ -116,6 +116,11 @@ include("conexion.php");
                                     ?>
                                 </tbody>
                             </table>
+                            <div class="container">
+                                    <a href="CRUD/T_CV_A.php" class ="btn btn-success">Agregar Productor</a>
+                                    <a href="CRUD/T_CV_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_CV_E.php" class ="btn btn-danger">Eliminar</a>
+                            </div>
                         </div>
                     </div>
 
