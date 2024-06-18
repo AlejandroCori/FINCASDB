@@ -2,6 +2,7 @@
 include("conexion.php");
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,9 +75,6 @@ include("conexion.php");
                         <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
                         <li class="breadcrumb-item active">TABLAS</li>
                     </ol>
-
-                    <div class="card mb-4">
-                    </div>
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
@@ -88,8 +86,7 @@ include("conexion.php");
                                     <tr>
                                         <th scope="col">CIF</th>
                                         <th scope="col">Persona Contacto</th>
-                                        <th scope="col">Telefono Contacto </th>
-                                        <th scope="col">Sector</th>
+                                        <th scope="col">Telefono Contacto</th>
                                         <th scope="col">Sector</th>
                                         <th scope="col">Direccion</th>
                                         <th scope="col">Nombre</th>
@@ -111,7 +108,6 @@ include("conexion.php");
                                             <td><?php echo $dato['direccion'] ?> </td>
                                             <td><?php echo $dato['nombre'] ?> </td>
                                             <td><?php echo $dato['telefono'] ?> </td>
-
                                         </tr>
                                     <?php
                                     }
@@ -120,19 +116,32 @@ include("conexion.php");
                             </table>
                         </div>
                     </div>
-
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-                <script src="js/scripts.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-                <script src="js/datatables-simple-demo.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
-                <script>
-                    $document.ready(function() {
-                        $('#datatablesSimple').DataTable();
-                    });
-                </script>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new simpleDatatables.DataTable("#datatablesSimple", {
+                    labels: {
+                        placeholder: "Buscar...",
+                        perPage: "Mostrar registros por pagina",
+                        noRows: "No se encontraron resultados en su busqueda",
+                        info: "Mostrando registros de {start} al {end} de un total de {rows} registros",
+                        infoFiltered: "(filtrado de un total de {rowsTotal} registros)",
+                        infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+                        next: "Siguiente",
+                        previous: "Anterior",
+                        first: "Primero",
+                        last: "Ultimo"
+                    }
+                });
+            });
+        </script>
 </body>
 
 

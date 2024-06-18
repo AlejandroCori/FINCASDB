@@ -2,6 +2,8 @@
 include("conexion.php");
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,9 +101,9 @@ include("conexion.php");
                                         <tr>
                                             <td><?php echo $dato['codOficina'] ?> </td>
                                             <td><?php echo $dato['actividad'] ?> </td>
-                                    <?php
+                                        <?php
                                     }
-                                    ?>
+                                        ?>
                                 </tbody>
                             </table>
                         </div>
@@ -127,12 +129,22 @@ include("conexion.php");
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
     <script>
-        $document.ready(function() {
-            $('#datatablesSimple').DataTable();
-            $('#datatablesSimple1').DataTable();
-
+        document.addEventListener('DOMContentLoaded', function() {
+            new simpleDatatables.DataTable("#datatablesSimple", {
+                labels: {
+                    placeholder: "Buscar...",
+                    perPage: "Mostrar registros por pagina",
+                    noRows: "No se encontraron resultados en su busqueda",
+                    info: "Mostrando registros de {start} al {end} de un total de {rows} registros",
+                    infoFiltered: "(filtrado de un total de {rowsTotal} registros)",
+                    infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    next: "Siguiente",
+                    previous: "Anterior",
+                    first: "Primero",
+                    last: "Ultimo"
+                }
+            });
         });
     </script>
 </body>

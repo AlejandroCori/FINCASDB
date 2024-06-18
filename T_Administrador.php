@@ -35,7 +35,7 @@ include("conexion.php");
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Datos</div>
-                        <a class="nav-link" href="index.php">
+                        <a class="nav-link" href="../index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Inicio
                         </a>
@@ -71,11 +71,9 @@ include("conexion.php");
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">TABLAS</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="../index.php">Inicio</a></li>
                         <li class="breadcrumb-item active">TABLAS</li>
                     </ol>
-                    <div class="card mb-4">
-                    </div>
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
@@ -88,6 +86,7 @@ include("conexion.php");
                                         <th scope="col">nColegiado</th>
                                         <th scope="col">DNI</th>
                                         <th scope="col">Nombre</th>
+                                        <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -101,12 +100,19 @@ include("conexion.php");
                                             <td><?php echo $dato['nColegiado'] ?> </td>
                                             <td><?php echo $dato['DNI'] ?> </td>
                                             <td><?php echo $dato['Nombre'] ?> </td>
-                                        </tr>
+                                            <th> 
+                                                <a href="CRUD/T_A_M.php" class ="btn btn-warning">Editar></a>
+                                                <a href="CRUD/T_A_E.php" class ="btn btn-danger">Eliminar></a>
+                                            </th>
+                                            </tr>
                                     <?php
                                     }
                                     ?>
                                 </tbody>
                             </table>
+                                <div class="container">
+                                    <a href="" class ="btn btn-success">Agregar Productor</a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -130,12 +136,22 @@ include("conexion.php");
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
     <script>
-        $document.ready(function() {
-            $('#datatablesSimple').DataTable();
-            $('#datatablesSimple1').DataTable();
-
+        document.addEventListener('DOMContentLoaded', function() {
+            new simpleDatatables.DataTable("#datatablesSimple", {
+                labels: {
+                    placeholder: "Buscar...",
+                    perPage: "Mostrar registros por pagina",
+                    noRows: "No se encontraron resultados en su busqueda",
+                    info: "Mostrando registros de {start} al {end} de un total de {rows} registros",
+                    infoFiltered: "(filtrado de un total de {rowsTotal} registros)",
+                    infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    next: "Siguiente",
+                    previous: "Anterior",
+                    first: "Primero",
+                    last: "Ultimo"
+                }
+            });
         });
     </script>
 </body>
