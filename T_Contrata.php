@@ -109,6 +109,11 @@ include("conexion.php");
                                     ?>
                                 </tbody>
                             </table>
+                            <div class="container">
+                                    <a href="CRUD/T_CT_A.php" class ="btn btn-success">Agregar</a>
+                                    <a href="CRUD/T_CT_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_CT_E.php" class ="btn btn-danger">Eliminar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
