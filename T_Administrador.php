@@ -86,7 +86,6 @@ include("conexion.php");
                                         <th scope="col">nColegiado</th>
                                         <th scope="col">DNI</th>
                                         <th scope="col">Nombre</th>
-                                        <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -100,10 +99,6 @@ include("conexion.php");
                                             <td><?php echo $dato['nColegiado'] ?> </td>
                                             <td><?php echo $dato['DNI'] ?> </td>
                                             <td><?php echo $dato['Nombre'] ?> </td>
-                                            <th> 
-                                                <a href="CRUD/T_A_M.php" class ="btn btn-warning">Editar></a>
-                                                <a href="CRUD/T_A_E.php" class ="btn btn-danger">Eliminar></a>
-                                            </th>
                                             </tr>
                                     <?php
                                     }
@@ -111,7 +106,9 @@ include("conexion.php");
                                 </tbody>
                             </table>
                                 <div class="container">
-                                    <a href="" class ="btn btn-success">Agregar Productor</a>
+                                    <a href="CRUD/T_A_A.php" class ="btn btn-success">Agregar Productor</a>
+                                    <a href="CRUD/T_A_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_A_E.php" class ="btn btn-danger">Eliminar</a>
                                 </div>
                         </div>
                     </div>

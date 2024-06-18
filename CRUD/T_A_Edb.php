@@ -4,5 +4,5 @@ $ced=$_POST['txtide'];
 //echo $ced
 $r="delete from Administrador where nColegiado ='".$ced."'";
 $r=mysqli_query($link, $r);
-echo "eliminado";
+header("Location: ../T_Administrador.php");
 ?>
