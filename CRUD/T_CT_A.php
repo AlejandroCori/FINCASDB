@@ -3,7 +3,7 @@
 </head>
 <body>
 	<center>
-		<form method="POST" action="T_A_Abd.php"  name="adi">
+		<form method="POST" action="T_CT_Abd.php"  name="adi">
 			
 		<table border="1">
 			<tr>
