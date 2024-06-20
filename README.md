@@ -4,23 +4,26 @@
 
 **Sistema especializado en administrar fincas**
 
-**Table of Contents**
+**Tabla de Contenido**
 
 - [Sistema Web Administrador de Fincas](#sitema-web-administrador-de-fincas)
 - [Descripcion y contexto](#descripcion-y-contexto)
 - [Guia de Usuario](#guia-de-usuario)
+- [Tecnologias Usadas](#tecnologias-usadas)
+    - [Stack Front-End](#stack-front-end)
+    - [Stack Backend](#stack-backend)
+    - [Herramientas](#herramientas)
 - [Guia de Instalacion](#guia-de-instalacion)
-- [Dependencias](#dependencias)
-- [Lenguajes y herramientas utilizados](#lenguajes-y-herramientas-utilizados)
-- [Autor/es](#autores)
-- [Agradecimientos](#agradecimientos)
+- [Contribuidores](#contribuidores)
+
+
 
 
 ### Descripcion y contexto
  Este sistema de administracion de fincas tiene tiene el objetivo de administrar las fincas modernas que pueden ser bastante complejas, con múltiples áreas de producción y una variedad de recursos y actividades que necesitan ser gestionadas. Una administración efectiva de la finca requiere una herramienta centralizada que permita almacenar y acceder a información crítica de manera rápida y eficiente.
  
 ### Guia de Usuario
- **interfaz intuitiva (solo gozalo)**
+ **interfaz intuitiva (tu solo gozalo)**
 
 ### Tecnologias Usadas
 
