@@ -4,7 +4,7 @@
 <body>
 	<center>
 		<!-- Formulario no se puede agregar -->
-		<form method="POST" action="T_O_Mdb.php"  name="adi">
+		<form method="POST" action="T_LC_Mdb.php"  name="adi">
 			
 		<table border="1">
 			<tr>
@@ -14,7 +14,7 @@
 			</tr>
             <tr> 
 				<td>
-					codOficina 
+                    codLocalComercial 
 				</td>		
 				<td>
 					<input type="text" name="txt1">
@@ -22,11 +22,17 @@
 			</tr>
 			<tr>
 				<td>
-					Actividad 
+                    tipo 
 				</td>		
 				<td>
 					<input type="text" name="txt2">
 				</td>
+			</tr>
+			<tr>
+				<td>
+                    horario 
+				</td>		
+				<td><input type="text" name="txt3"></td>
 			</tr>
 			
 			<tr>

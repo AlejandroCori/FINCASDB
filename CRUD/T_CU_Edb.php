@@ -1,8 +1,8 @@
 <?php
 include("../conexion.php");
-$idc=$_POST['txtidc'];
+$nco=$_POST['txtidc'];
 //echo $ced
-$r="delete from Cuenta where idCuenta ='".$idc."'";
+$r="delete from Cuenta where idCuenta  ='".$nco."'";
 $r=mysqli_query($link, $r);
 header("Location: ../T_Cuenta.php");
 ?>

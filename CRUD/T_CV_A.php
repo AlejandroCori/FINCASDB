@@ -4,7 +4,7 @@
 
 <body>
     <center>
-        <form method="POST" action="T_CV_Abd.php" name="adi">
+        <form method="POST" action="T_CV_Adb.php" name="adi">
 
             <table border="1">
                 <tr>

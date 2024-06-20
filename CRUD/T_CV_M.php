@@ -6,7 +6,7 @@
 
 <body>
     <center>
-        <form method="POST" action="T_B_Mdb.php" name="modi">
+        <form method="POST" action="T_CV_Mdb.php" name="modi">
             <table border="1">
                 <tr>
                     <td colspan="2">modificar un registro</td>

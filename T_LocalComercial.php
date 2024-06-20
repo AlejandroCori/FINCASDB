@@ -79,54 +79,37 @@ include("conexion.php");
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            T_Propiedad
+                            T_Local Comercial
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
-                                        <th scope="col">N.Cuenta</th>
-                                        <th scope="col">Portal</th>
-                                        <th scope="col">Porcentaje</th>
-                                        <th scope="col">Letra</th>
-                                        <th scope="col">Planta</th>
-                                        <th scope="col">Telefono</th>
-                                        <th scope="col">Contacto</th>
-                                        <th scope="col">N.Inquilino</th>
-                                        <th scope="col">N.Propietario</th>
-                                        <th scape="col">Direccion Propietario</th>
-                                        <th scape="col">ColegioID </th>
+                                        <th scope="col">Cod Local Comercial</th>
+                                        <th scope="col">Tipo</th>
+                                        <th scope="col">Horario </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $sql = $Conexion->query("SELECT * FROM Propiedad;");
+                                    $sql = $Conexion->query("SELECT * FROM LocalComercial;");
                                     $Fila = $sql->fetch_all(MYSQLI_ASSOC);
 
                                     foreach ($Fila as $dato) {
                                     ?>
                                         <tr>
-                                            <td><?php echo $dato['nCuenta'] ?> </td>
-                                            <td><?php echo $dato['portal'] ?> </td>
-                                            <td><?php echo $dato['porcentaje'] ?> </td>
-                                            <td><?php echo $dato['letra'] ?> </td>
-                                            <td><?php echo $dato['planta'] ?> </td>
-                                            <td><?php echo $dato['telefono'] ?> </td>
-                                            <td><?php echo $dato['contacto'] ?> </td>
-                                            <td><?php echo $dato['nInquilino'] ?> </td>
-                                            <td><?php echo $dato['nPropietario'] ?> </td>
-                                            <td><?php echo $dato['direccionPropietario'] ?> </td>
-                                            <td><?php echo $dato['colegioID'] ?> </td>
-                                        </tr>
+                                            <td><?php echo $dato['codLocalComercial'] ?> </td>
+                                            <td><?php echo $dato['tipo'] ?> </td>
+                                            <td><?php echo $dato['horario'] ?> </td>
                                     <?php
                                     }
                                     ?>
                                 </tbody>
                             </table>
                             <div class="container">
-                                    <a href="CRUD/T_P_A.php" class ="btn btn-success">Agregar</a>
-                                    <a href="CRUD/T_P_M.php" class ="btn btn-warning">Editar</a>
-                                    <a href="CRUD/T_P_E.php" class ="btn btn-danger">Eliminar</a>
+                                    <a href="CRUD/T_LC_A.php" class ="btn btn-success">Agregar</a>
+                                    <a href="CRUD/T_LC_M.php" class ="btn btn-warning">Editar</a>
+                                    <a href="CRUD/T_LC_E.php" class ="btn btn-danger">Eliminar</a>
                             </div>
                         </div>
                     </div>
@@ -151,6 +134,7 @@ include("conexion.php");
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=//cdn.datatables.net/2.0.8/js/dataTables.min.js></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             new simpleDatatables.DataTable("#datatablesSimple", {

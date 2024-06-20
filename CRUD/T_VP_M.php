@@ -4,32 +4,26 @@
 	</head>
 	<body>
 		<center>
-		<form method="POST" action="T_CT_Mdb.php" name="modi">
+		<form method="POST" action="T_VP_Mdb.php" name="modi">
 		<table border="1">
 			<tr>
 				<td colspan="2">modificar un registro</td>
 			</tr>   
 			<tr> 
 				<td>
-                    nContrato 
+                    Cod Vivienda Particular
 				</td>		
 				<td>
-					<input type="text" name="txtnCo">
+					<input type="text" name="txtcvp">
 				</td>
 			</tr>
 			<tr>
 				<td>
-                    CIF 
+                    nHabitaciones
 				</td>		
 				<td>
-					<input type="text" name="txtcif">
+					<input type="text" name="txtnha">
 				</td>
-			</tr>
-			<tr>
-				<td>
-                    ColegioID
-				</td>		
-				<td><input type="text" name="txtcol"></td>
 			</tr>
 			<tr>
 				<td colspan="2">

@@ -1,9 +1,9 @@
 <head>
-	<title>ejemplo para practicar</title>
+	<title>Añadir</title>
 </head>
 <body>
 	<center>
-		<form method="POST" action="T_CT_Adb.php"  name="adi">
+		<form method="POST" action="T_VP_Abd.php"  name="adi">
 			
 		<table border="1">
 			<tr>
@@ -13,27 +13,20 @@
 			</tr>
             <tr> 
 				<td>
-                    nContrato 
+                    codViviendaParticular 
 				</td>		
 				<td>
-					<input type="text" name="txtnCo">
+					<input type="text" name="txtncvp">
 				</td>
 			</tr>
 			<tr>
 				<td>
-                    CIF 
+                    nHabitaciones 
 				</td>		
 				<td>
-					<input type="text" name="txtcif">
+					<input type="text" name="txtnha">
 				</td>
 			</tr>
-			<tr>
-				<td>
-                    ColegioID 
-				</td>		
-				<td><input type="text" name="txtcol"></td>
-			</tr>
-			<tr>
 				<td colspan="2">
 					<input type="submit" name="Agregar">
 				</td>

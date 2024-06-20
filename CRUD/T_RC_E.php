@@ -1,9 +1,9 @@
 <cente>
-	<form action="T_C_Edb.php" method="POST" name="">
+	<form action="T_RC_Edb.php" method="POST" name="">
 	<table>
 		<tr>
-			<td>Ingrese el ID</td>
-			<td><input type="text" name="txt1"> </td>
+			<td>Ingrese nCuenta</td>
+			<td><input type="text" name="txtcu"> </td>
 		</tr>
 		<tr>
 			<td colspan="2">
