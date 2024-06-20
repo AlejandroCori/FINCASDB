@@ -1,0 +1,129 @@
+:root{
+    --primary-font-color1: #ffffff; 
+    --primary-font-color2: #007bff;
+}
+
+.navbar-light {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0,0,0,.7);
+    
+}
+
+.navbar-light .container a, .navbar-light .container .collapse .navbar-nav .nav-item .nav-link{
+    color: var(--primary-font-color1);
+}
+
+.background-main{
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(https://img.freepik.com/foto-gratis/hermoso-paisaje-rio-rodeado-vegetacion-bosque_181624-40482.jpg?w=996&t=st=1718849560~exp=1718850160~hmac=0dc3217d6b71d5d0928f949ede541c1fae15e4c3ed976de3960ffd8358551090);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+}
+
+.background-main, .services-class{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color:var(--primary-font-color1);
+}
+
+.background-main h1{
+    font-size: 5.5rem;
+}
+
+.background-main .main { 
+    display: table; 
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    /*
+    display: flex; 
+    width: 50%; 
+    height: 200px; 
+    margin: auto; 
+    */
+} 
+
+.background-main .main .main-title,.background-main .main p { 
+    display: table-cell;
+    vertical-align: middle;
+    /*margin: auto;  Important 
+    text-align: center;  */
+}
+
+.main-link{
+    font-size: 44px;
+    color: var(--primary-font-color1);
+}
+.main-link:hover{
+    color:var(--primary-font-color2);
+}
+
+.about-us,.services-class{
+    margin-top: 3em;
+    margin-bottom: 3em; 
+}
+
+.line-shape{
+    width: 10%;
+    height: 2px;
+    margin-left: calc(49% - 40px);
+    background-color: var(--primary-font-color2);
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+
+.services-class{
+    max-width: 100%;
+    height: 78vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(https://img.freepik.com/foto-gratis/hermosos-pinos-montanas_155003-15058.jpg?w=996&t=st=1718849587~exp=1718850187~hmac=593adc45b33ba885bb22fb5149fa8ca779a35dfd126263e27c27f27331397a4a);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+}
+
+.services-class .section-heading, .portfolio-title,.contact-us .section-heading{
+    font-size: 34px;
+    margin-top: 2.5em;
+}
+
+.services-class .container .service-box .text-muted{
+    color: rgba(255,255,255,.7) !important
+}
+
+.contact-us{
+    max-width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(https://img.freepik.com/foto-gratis/closeup-foto-bellotas-bosque_181624-51999.jpg?w=996&t=st=1718849622~exp=1718850222~hmac=056191388fab75f94b5e2e8fd69e349da173e8ef26bafb135f44430b88cf6d80);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color: var(--primary-font-color1);
+    -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
+}
+
+
+footer.footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 2.5rem;
+    background-color: var(--primary-font-color2);
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+footer.footer .social-link:hover{
+    background-color: rgba(20,20,20, .5);
+}

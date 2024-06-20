@@ -3,6 +3,7 @@
 </head>
 <body>
 	<center>
+		<!-- Formulario no se puede agregar -->
 		<form method="POST" action="T_P_Abd.php"  name="adi">
 			
 		<table border="1">
